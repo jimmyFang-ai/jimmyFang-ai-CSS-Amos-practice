@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  background: #ccc;
+  background: linear-gradient(115deg, #7bf 50%, transparent 50%) center center/100% 100%, url("https://images.unsplash.com/photo-1431057259500-78dd318a0a75?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80") right center/auto 100%;
+}
+
+.bannerText {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.bannerText .heroTitle {
+  font-size: 50px;
+  border-bottom: 1px solid #333;
+  font-weight: 900;
+  color: red;
+}
+
+.bannerText .heroTitle small {
+  display: block;
+  font-size: 40;
+  font-weight: 700;
+  color: #333;
+}
+
+.bannerText .subTitle {
+  font-size: 30px;
+  font-weight: 700;
+  color: red;
+}
+
+.bannerText p {
+  font-size: 20px;
+  font-weight: 300;
+  color: #333;
+}
+/*# sourceMappingURL=all.css.map */
