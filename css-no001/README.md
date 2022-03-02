@@ -2,10 +2,6 @@
 
 ![](https://i.imgur.com/LnNnfxt.jpg)
 
-<<<<<<< HEAD
-=======
- ![](https://i.imgur.com/LnNnfxt.jpg)
->>>>>>> 20c103952f577ca543099edfacd0bcb8279fa1a4
 
 
 
@@ -38,7 +34,6 @@
 
 
 ## **SCSS 樣式**
-
   * ###  CSS reset
     > Amos 老師使用這個方式，完成CSS reset，保留原本預設 HTML 標籤的樣式與彈性運用
     >因為實際開發環境上如果使用 reset.css 與 normalize.css，可以針對需求擇一使用即可
@@ -109,13 +104,10 @@
     ```
 
 
-<<<<<<< HEAD
+
 ## **練習程式碼**
   * [codepen](https://codepen.io/pohxiqqo/pen/abVQxvN)
-=======
-## 練習程式碼
-   * [codepen](https://codepen.io/pohxiqqo/pen/abVQxvN)
->>>>>>> 20c103952f577ca543099edfacd0bcb8279fa1a4
+
   
 
 ## **參考資料出處**:
