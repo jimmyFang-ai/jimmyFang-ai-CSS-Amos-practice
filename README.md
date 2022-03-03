@@ -18,5 +18,5 @@
 ## **金魚網頁切版系列目錄**
 
 
-* [金魚都能懂的網頁切版 : 圖文滿版區塊 NO001 | 切版教學](https://ithelp.ithome.com.tw/articles/10215601)
-
+* [金魚都能懂的網頁切版 : 圖文滿版區塊 NO001 ](https://ithelp.ithome.com.tw/articles/10215601)
+* [金魚都能懂的網頁切版 : 互動圖文卡片 NO002 ](https://ithelp.ithome.com.tw/articles/10216684)

@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.wrap {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
+.card {
+  width: 25%;
+  position: relative;
+}
+
+.card:hover .card-body {
+  opacity: 1;
+}
+
+.card:hover .card-title::after {
+  width: 100%;
+}
+
+.card .card-img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.card .card-body {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  cursor: pointer;
+}
+
+.card .card-title {
+  font-size: 32px;
+  color: red;
+  font-weight: 500;
+}
+
+.card .card-title::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  margin: 10px 0;
+  background-color: red;
+  -webkit-transition: width 0.5s 0.3s;
+  transition: width 0.5s 0.3s;
+}
+
+.card .card-text {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 100;
+}
+/*# sourceMappingURL=all.css.map */

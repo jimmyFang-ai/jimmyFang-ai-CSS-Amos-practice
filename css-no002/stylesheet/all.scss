@@ -1,0 +1,85 @@
+// css reset
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+// .wrap 外容器
+// 將 .warp 設定網頁滿寬當作容器，使用 flex 將 .card 的四個物件水平排列
+.wrap {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+}
+
+// .card 容器內的物件
+// 1. .card 將四個物件分別設定佔據 .wrap 容器內25%(約四分之一的寬度)，
+// 因為 .card-body 使用絕對定位要定位.card(父層)，所以要使用相對定位
+.card {
+    width: 25%;
+    position: relative;
+
+    // 互動效果製作: 父層下指令，子層執行動作
+    &:hover {
+        .card-body {
+            opacity: 1;
+        };
+
+        .card-title::after {
+            width: 100%;
+        }
+    }
+    .card-img {
+        width: 100%;
+        //清除圖片下方多餘空間
+        vertical-align: middle;
+    }
+    .card-body {
+        //使用絕對定位，定位在父層 .card 做成圖片遮罩
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.6);
+        // 使用 flex 將 .card-body 內容垂直居中排列
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // 互動效果製作 - 隱藏文字 , Transition 網頁動畫: 屬性 轉換時間 延遲執行時間 速度
+        opacity: 0;
+        transition: opacity 0.5s;
+        cursor: pointer;
+    }
+
+    // 4. .card-body 內的文字樣式調整
+    .card-title {
+        font-size: 32px;
+        color: red;
+        font-weight: 500;
+        // 使用 偽元素 :after 製作 跑馬燈效果線條
+        &::after {
+            content: "";
+            display: block;
+            width: 0%; //一開始線條為 0
+            height: 2px;
+            margin: 10px 0;
+            background-color: red;
+            transition: width 0.5s 0.3s;
+        }
+    }
+    .card-text {
+        font-size: 16px;
+        color: #fff;
+        font-weight: 100;
+    }
+}
+
+
