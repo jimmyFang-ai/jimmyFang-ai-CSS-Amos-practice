@@ -200,9 +200,9 @@
   *  ##  **使用偽元素增加網頁互動效果 ::after**
 
      >使用偽元素製作在 .card-title 下製作跑馬燈線，能讓網頁與使用者互動時，更加生動有趣
-    * 要在 .card-title 下方加上一條橫線產生互動，並且 transition 後面指定的值可 以單獨指定，與應用  在前面指定 opacity 相同。
-    * 並且指定在 hover 後的效果占滿 .card 內的寬度 100%。
-    * 使 .card-title底線用 transition 指定寬度時間漸變 0.5s，delay(延遲) 0.3s。
+     * 要在 .card-title 下方加上一條橫線產生互動，並且 transition 後面指定的值可 以單獨指定，與應用  在前面指定 opacity 相同。
+     * 並且指定在 hover 後的效果占滿 .card 內的寬度 100%。
+     * 使 .card-title底線用 transition 指定寬度時間漸變 0.5s，delay(延遲) 0.3s。
 
      ```scss
      .card {
