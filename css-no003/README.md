@@ -1,6 +1,6 @@
 # ✏ **CSS切版筆記 - 『金魚切版系列: 人員介紹卡片 NO003  』**
 
-![]()
+![](https://i.imgur.com/rTq5ZhK.jpg)
 
 
 
