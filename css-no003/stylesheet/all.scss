@@ -1,0 +1,101 @@
+// css reset
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+// 盒模型
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    background: lightblue;
+}
+
+// 卡片樣式
+// 基本架構樣式
+.wrap {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.card {
+    width: 374px;
+    margin: 0 12px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #fff;
+    // 卡片位移設定
+    transform: translateY(0px);
+    transition: 0.5s;
+    cursor: pointer;
+    //  卡片位移效果
+    &:hover {
+        transform: translateY(-50px);
+
+         // 換色效果，卡片(父層)被hover，子層(.card-body::after)做動作(換色)
+         //漸層從下到上
+        .card-body {
+          background-image: linear-gradient(0deg,lightsalmon,orange);
+        }
+
+        .card-body::before {
+            border-left: 186px solid orange;
+            border-right: 186px solid orange;
+        }
+    }
+     
+    
+    .card-body {
+        padding: 20px;
+        position: relative;
+        //   三角形蓋板製作
+        &::before {
+            content: "";
+            //設定絕對定位後會自動轉型成區塊元素
+            position: absolute;
+            width: 0;
+            height: 0;
+            left: 0;
+            top: 0;
+            // 將 border-top 改成 50px高度 的透明三角形
+            border-top: 50px solid transparent;
+            // 兩側 三角形斜邊長改成 `card` 寬度 374px 的一半 再扣掉兩邊 1公分實線寬
+            border-left: 186px solid #fff;
+            border-right: 186px solid #fff;
+            // 向上位移 -100% 的位置
+            transform: translateY(-100%);
+        }
+    }
+
+    .card-img {
+        width: 100%; // 圖片滿寬於父層 .card
+        vertical-align: middle; // 清除圖片下方多餘空間
+    }
+
+
+    .card-title {
+        border-bottom: 1px solid gray;
+        padding-bottom: 4px;
+        margin-bottom: 4px;
+        font-weight: 900;
+    }
+
+    .card-text {
+        line-height: 1.5;
+        font-weight: 300;
+    }
+}
